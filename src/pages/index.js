@@ -1,4 +1,3 @@
-export { default as Homepage } from "./Homepage";
 export { default as Social } from "./Social";
 export { default as Playlists } from "./Playlists";
 export { default as Contact } from "./Contact";

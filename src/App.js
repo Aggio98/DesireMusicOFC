@@ -1,6 +1,7 @@
 import "./App.css";
-import { Homepage, Playlists, Contact, Events, Footage, Social } from "./pages";
-import { Routes, Route } from "react-router-dom";
+import { Playlists, Contact, Events, Footage, Social } from "./pages";
+import Navbar from "./components/Navbar";
+import { Route, Routes } from "react-router-dom";
 import { Logo } from "./components/Logo";
 import background from "./assets/Background.mp4";
 
@@ -13,8 +14,8 @@ function App() {
           <Logo />
         </div>
       </div>
+      <Navbar />
       <Routes>
-        <Route path="/" element={<Homepage />} />
         <Route path="/playlists" element={<Playlists />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/footage" element={<Footage />} />
