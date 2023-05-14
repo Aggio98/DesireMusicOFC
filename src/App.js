@@ -1,5 +1,5 @@
 import "./App.css";
-import { Playlists, Contact, Events, Footage, Social } from "./pages";
+import { Contact, Footage, Events } from "./pages";
 import Navbar from "./components/Navbar";
 import { Route, Routes } from "react-router-dom";
 import { Logo } from "./components/Logo";
@@ -12,16 +12,16 @@ function App() {
         <video src={background} autoPlay loop muted type="video/mp4" />
         <div className="content">
           <Logo />
+          <div className="navbar">
+            <Navbar />
+          </div>
+          <Routes>
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/footage" element={<Footage />} />
+            <Route path="/events" element={<Events />} />
+          </Routes>
         </div>
       </div>
-      <Navbar />
-      <Routes>
-        <Route path="/playlists" element={<Playlists />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/footage" element={<Footage />} />
-        <Route path="/events" element={<Events />} />
-        <Route path="/social" element={<Social />} />
-      </Routes>
     </div>
   );
 }

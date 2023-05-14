@@ -1,20 +1,10 @@
 import React, { useState } from "react";
-import DropDown from "./DropDown";
 import { Link } from "react-router-dom";
 import "./navbar.css";
 
 function Navbar() {
   const [click, setClick] = useState(false);
-  const [dropdown, setDropdown] = useState(false);
   const closeMobileMenu = () => setClick(false);
-
-  const onMouseEnter = () => {
-    setDropdown(true);
-  };
-
-  const onMouseLeave = () => {
-    setDropdown(false);
-  };
 
   return (
     <div>
@@ -43,15 +33,10 @@ function Navbar() {
               </Link>
             </li>
 
-            <li
-              className="nav-items"
-              onMouseEnter={onMouseEnter}
-              onMouseLeave={onMouseLeave}
-            >
+            <li className="nav-items">
               <Link className="nav-links" onClick={closeMobileMenu}>
                 {" "}
                 Playlists
-                {dropdown && <DropDown />}
               </Link>
             </li>
 
@@ -66,11 +51,7 @@ function Navbar() {
               </Link>
             </li>
 
-            <li
-              className="nav-items"
-              onMouseEnter={onMouseEnter}
-              onMouseLeave={onMouseLeave}
-            >
+            <li className="nav-items">
               <Link
                 to="/social"
                 className="nav-links"

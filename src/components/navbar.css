@@ -1,27 +1,20 @@
 .navbar {
   position: relative;
-  background: rgba(0, 212, 255, 1);
-  height: 85px;
+  background: transparent;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 20px;
-  box-shadow: 1px 2px 5px lightgray;
-}
-
-.logo {
-  color: #fff;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 35px;
+  font-size: 25px;
+  padding-top: 40px;
 }
 
 .nav-side-menu {
   display: grid;
   grid-template-columns: repeat(5, auto);
-  gap: 0 10px;
-  width: 70vw;
-  justify-content: end;
+  gap: 100px;
+  width: auto;
+  justify-content: center;
   margin-right: 35px;
 }
 
@@ -32,17 +25,14 @@
 }
 
 .nav-links {
-  color: white;
-  text-decoration: none;
+  color: rgb(255, 255, 255);
+  /* text-decoration: none; */
   padding: 8px 20px;
   transition: all 0.3s ease-out;
+  font-family: "Bebas Kai", sans-serif;
 }
 
 .nav-links:hover {
-  background-color: #000;
+  background-color: white;
   border-radius: 5px;
-}
-
-.fa-bars {
-  color: #fff;
 }
