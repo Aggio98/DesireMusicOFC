@@ -1,5 +1,5 @@
 import "./App.css";
-import { Contact, Footage, Events } from "./pages";
+import { Contact, Footage } from "./pages";
 import Navbar from "./components/Navbar";
 import { Route, Routes } from "react-router-dom";
 import { Logo } from "./components/Logo";
@@ -18,7 +18,6 @@ function App() {
           <Routes>
             <Route path="/contact" element={<Contact />} />
             <Route path="/footage" element={<Footage />} />
-            <Route path="/events" element={<Events />} />
           </Routes>
         </div>
       </div>

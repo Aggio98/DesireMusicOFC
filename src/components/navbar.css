@@ -17,7 +17,7 @@
   justify-content: center;
   margin-right: 35px;
 }
-
+/*
 .nav-items {
   display: flex;
   align-items: center;
@@ -25,14 +25,15 @@
 }
 
 .nav-links {
-  color: rgb(255, 255, 255);
-  /* text-decoration: none; */
+  color: rgb(130, 129, 129);
+  text-decoration: none;
   padding: 8px 20px;
   transition: all 0.3s ease-out;
   font-family: "Bebas Kai", sans-serif;
 }
 
 .nav-links:hover {
-  background-color: white;
+  background-color: rgb(10, 10, 10);
   border-radius: 5px;
-}
+  color: white;
+} */

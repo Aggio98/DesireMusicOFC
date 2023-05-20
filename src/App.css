@@ -1,14 +1,1 @@
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url("https://codemafias.com/img/post_imgs/1674401036266.jpg");
-  background-position: center;
-  background-size: cover;
-  height: calc(100vh - 85px);
-}
 
-.container h1 {
-  font-size: 3rem;
-  color: white;
-}
