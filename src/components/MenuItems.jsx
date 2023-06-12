@@ -1,27 +1,27 @@
-import Dropdown from "./DropDown";
-import { useState } from "react";
-
-const MenuItems = ({ items }) => {
-  const [dropdown, setDropdown] = useState(false);
-  return (
-    <li className="menu-items">
-      {items.submenu ? (
-        <>
-          <button
-            type="button"
-            aria-haspopup="menu"
-            aria-expanded={dropdown ? "true" : "false"}
-            onClick={() => setDropdown((prev) => !prev)}
-          >
-            {items.title}{" "}
-          </button>
-          <Dropdown submenus={items.submenu} dropdown={dropdown} />
-        </>
-      ) : (
-        <a href={items.url}>{items.title}</a>
-      )}
-    </li>
-  );
-};
-
-export default MenuItems;
+export const MenuItems = [
+  {
+    title: "SoundCloud",
+    path: "/soundcloud",
+    cName: "dropdown-link",
+  },
+  {
+    title: "Spotify",
+    path: "/spotify",
+    cName: "dropdown-link",
+  },
+  {
+    title: "Title of Event",
+    path: "/titleofevent",
+    cName: "dropdown-link",
+  },
+  {
+    title: "Facebook",
+    path: "/facebook",
+    cName: "dropdown-link",
+  },
+  {
+    title: "instagram",
+    path: "/instagram",
+    cName: "dropdown-link",
+  },
+];

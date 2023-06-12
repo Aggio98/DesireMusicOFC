@@ -1,0 +1,32 @@
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-menu {
+  display: block;
+  position: absolute;
+  right: 0;
+  background-color: transparent;
+  width: 160px;
+  z-index: 1;
+}
+
+.dropdown-menu li {
+  color: black;
+  padding: 25px 30px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-menu li:hover {
+  display: block;
+}
+
+.dropdown-menu.clicked {
+  display: none;
+}
+
+.dropdown-link {
+  display: block;
+}
