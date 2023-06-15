@@ -1,26 +1,34 @@
 .dropdown {
   position: relative;
   display: inline-block;
+  align-content: center;
 }
 
 .dropdown-menu {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
   position: absolute;
+  padding-top: 25px;
   right: 0;
   background-color: transparent;
-  width: 160px;
-  z-index: 1;
+  width: 225px;
 }
 
 .dropdown-menu li {
   color: black;
-  padding: 25px 30px;
   text-decoration: none;
   display: block;
+  cursor: pointer;
 }
 
 .dropdown-menu li:hover {
   display: block;
+  background-color: black;
+  border-radius: 4px;
+  transition: all 0.2s ease-out;
+  color: white;
+  width: auto;
 }
 
 .dropdown-menu.clicked {
@@ -29,4 +37,5 @@
 
 .dropdown-link {
   display: block;
+  position: inherit;
 }

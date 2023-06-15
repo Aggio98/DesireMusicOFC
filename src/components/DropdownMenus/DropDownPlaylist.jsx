@@ -13,6 +13,7 @@ const DropdownPlaylists = () => {
       <ul
         onClick={handleClick}
         className={click ? "dropdown-menu clicked" : "dropdown-menu"}
+        style={{ paddingLeft: "95px", width: "230px" }}
       >
         {MenuItemsPlaylists.map((item, index) => {
           return (

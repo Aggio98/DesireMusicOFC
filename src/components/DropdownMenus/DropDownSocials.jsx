@@ -13,6 +13,7 @@ const DropdownSocials = () => {
       <ul
         onClick={handleClick}
         className={click ? "dropdown-menu clicked" : "dropdown-menu"}
+        style={{ paddingLeft: "115px", width: "230px" }}
       >
         {MenuItemsSocials.map((item, index) => {
           return (
